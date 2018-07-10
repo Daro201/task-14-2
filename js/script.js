@@ -14,6 +14,14 @@ var movies = [
 	year: 1994,
 	director: ' Roger Allers, Rob Minkoff',
 	picture: 'https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
+},
+{	
+	id: 3,
+	title: 'Szerwgowiec Ryan',
+	desc: 'Film wojenny',
+	year: 1998,
+	director: ' Steven Spielberg',
+	picture: 'https://images.pexels.com/photos/20258/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
 }
 ];
 
@@ -29,7 +37,7 @@ var moviesElements = movies.map(function(movie) {
 
 var element =
 	React.createElement('div', {},
-		React.createElement('h1', {}, 'Lista filmów'),
+		React.createElement('h1', {}, 'Lista filmów:'),
 		React.createElement('ul', {}, moviesElements)
 	);
   ReactDOM.render(element, document.getElementById('app'));
